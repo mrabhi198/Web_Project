@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product</title>
+
+    <!-- css -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- box icon -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <!-- navbar -->
+    <header>
+        <!-- nav -->
+        <div class="nav container">
+            <!-- logo -->
+            <a href="#" class="logo">Ecommerce</a>
+            <!-- navigation links -->
+            <nav class="navbar">
+                <ul class="nav-list">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#product">Product</a></li>
+                    <li><a href="#review">Review</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <!-- cart icon -->
+            <i class='bx bx-shopping-bag' id="cart-icon" data-quantity="0"></i>
+            <!-- cart -->
+            <div class="cart">
+                <h2 class="cart-title">Your Cart</h2>
+                <!-- content -->
+                <div class="cart-content"></div>
+                <!--total-->
+                <div class="total">
+                    <div class="total-title">Total</div>
+                    <div class="total-price">₹0</div>
+                </div>
+                <!--buy button-->
+                <button type="button" class="btn-buy">Pay Now</button>
+                <!-- close cart -->
+                <i class='bx bx-x' id="close-cart"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- Product -->
+    <section class="shop container" id="product">
+        <h2 class="section-title">Shop Products</h2>
+
+        <!--shop content-->
+        <div class="shop-content">
+            <!-- product box1 -->
+            <div class="product-box">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjodrRRFlEk3sMU4yCGqQw3cIg288nv30xk_Q1hYYr6BNSaRb9yoiu8WssIJKC52XGkWv7ceJWPs1G-j9lW7akySrtz9HYw3bhaOWCQZ1nN7UeFiPtj65o8OqhhKmSQGjAZjXW-1iy38MAYbsw_P4nn1ph6wJ1JHgmu91TV1r-iCM4_UYJgNIUCLuH81DmS/s320/product1.jpeg" alt="" class="product-img">
+                <!-- product name -->
+                <h2 class="product-title">ADICOLOR SEASONAL</h2>
+                <span class="price">₹499</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+
+            <!-- product box2 -->
+            <div class="product-box">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjrbkAhmqyZka6oiHWLKSpw2zKP0w-6A5lGfniVx6-v5DxC5LlS-tzy4AvYwanCuyxS9LRcoCW_3cO2kRKZZTF_Fd_XvtHU_d-RGWc4bdIik5Sx65KocbesNB-mQk8Ubi1WDpFqPZIjiilVCtOo8oEttGoAEBLe9Jm4ZCW6CaAqg1tkKaq65EuEEN0l1f30/s320/product2.jpeg" alt="" class="product-img">
+                <!-- product name -->
+                <h2 class="product-title">BAGPACK</h2>
+                <span class="price">₹399</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+
+            <!-- product box3 -->
+            <div class="product-box">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhHQOyjRMKT93SWaKkDKQroBD_CihdogC5fgzKyhwGYWCIrQxDs4p0a6cGdzTHUvAdBjgLa5fiDfpwx8U1dhSwUC7Tzcp9UZUi8aNPDVkpL9Eo_RdsQ-6hC7Z_v4hwGZnnaA9HI5lCdrahm8RiWRLYudTjSJQIDI3I9vpYSmdHMrIBaDMkmhDWqHAsNiBQ5/s320/product3.jpeg" alt="" class="product-img">
+                <!-- product name -->
+                <h2 class="product-title">CAP</h2>
+                <span class="price">₹99</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+
+            <!-- product box4 -->
+            <div class="product-box">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEju8pt-UogoRv8JGQ3ujMjitebboYxMywbhfqd1e9GH_9-XlAINZoZTS94zBVv3unTHUJQ6FFKRVbnUk1m9OPbW05M4mNCn0iy5JFu1ei4uElnastY4Oi6h1mPyIYJfObA26jzwb5AsC9J4JMGNpXa54uqjz9qTx5gWY3Y84m0qGDGrBheFXlC-VZOiFO5D/s320/product4.jpeg" alt="" class="product-img">
+                <!-- product name -->
+                <h2 class="product-title">T-SHIRT</h2>
+                <span class="price">₹899</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+
+            <!-- product box5 -->
+            <div class="product-box">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiVwHTk7uAXY5ERkHpHZ-PmZPOubM4MmSIUv3vUCJ7QQe0bvKdrkTlCG6uk_PvE9S9VS014YZ_iensn-iWLPFv49pUAd_WFpdVZWBxVJ3z8TV4Ql0cAdwhZiHHwfLCWf6UaXOOeZSk54iSRxQXtN-Urx4Nnlh4pfU5rgjjIW-yeDnhQqayKAuwvAKg9x7CS/s320/product5.jpeg" alt="" class="product-img">
+                <!-- product name -->
+                <h2 class="product-title">SUIT</h2>
+                <span class="price">₹699</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+
+            <!-- product box6 -->
+            <div class="product-box">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiJsFTIA9m8Rd2hPQzhO79cANjNmWHx5VC3zOjgdejKHmddeuaKEJyry2m_gFFI3Tmd91W4nb97B0gxTfawKqEI0ll3qUFaDywpjvp3xENi76al6McPAqqTmf4rnhSInlvFMUN-bjc_ZTFDMk0M04xZSM3M9AmxSBGSe3Ms4O_g4WMvg3G_LMyZ0BUnmZzY/s320/product6.jpeg" alt="" class="product-img">
+                <!-- product name -->
+                <h2 class="product-title">EARBUDS</h2>
+                <span class="price">₹50</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+
+            <!-- product box7 -->
+            <div class="product-box">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiYIQ0upUIqLO9t7dxTwHF4fUwXPcCyhUog2ehFIssTBRRAifhpDEMe04nneFbL4ZMxidNmocIhkwnyNA_Nvceh4CSBgnwEzM6BV4NK_mAWtP2kB_mXALnS_MLd7ueMTffCfuk7kFUqdlh3rGR9D0klDDTe5HWtonsWQnjzaE61mL3tMMtCQehp8JcWmK7Z/s320/product7.jpeg" alt="" class="product-img">
+                <!-- product name -->
+                <h2 class="product-title">BOTTLE</h2>
+                <span class="price">₹299</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+
+            <!-- product box8 -->
+            <div class="product-box">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEizwBAz2XkCZzHyFtONtpqarmImFcVM5umFAiFk5S1VcR3NVlAYjUInwUzHe2UhNea4ECzwwSD67V2XNOqGmq8K7evCtleskViDqIdl6qnjsvguWmsQw3du0sPvpiloGnAXn5T_H4aTyH87nUMFB_Zz99Nc8H06sBEOaxQQdrOrKNgkYivveFiCS9oXKvvk/s320/product8.jpeg" alt="" class="product-img">
+                <!-- product name -->
+                <h2 class="product-title">SHOES</h2>
+                <span class="price">₹500</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+
+            <!-- product box1 -->
+            <div class="product-box">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjodrRRFlEk3sMU4yCGqQw3cIg288nv30xk_Q1hYYr6BNSaRb9yoiu8WssIJKC52XGkWv7ceJWPs1G-j9lW7akySrtz9HYw3bhaOWCQZ1nN7UeFiPtj65o8OqhhKmSQGjAZjXW-1iy38MAYbsw_P4nn1ph6wJ1JHgmu91TV1r-iCM4_UYJgNIUCLuH81DmS/s320/product1.jpeg" alt="" class="product-img">
+                <!-- product name -->
+                <h2 class="product-title">ADICOLOR SEASONAL</h2>
+                <span class="price">₹499</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+
+            <!-- product box2 -->
+            <div class="product-box">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjrbkAhmqyZka6oiHWLKSpw2zKP0w-6A5lGfniVx6-v5DxC5LlS-tzy4AvYwanCuyxS9LRcoCW_3cO2kRKZZTF_Fd_XvtHU_d-RGWc4bdIik5Sx65KocbesNB-mQk8Ubi1WDpFqPZIjiilVCtOo8oEttGoAEBLe9Jm4ZCW6CaAqg1tkKaq65EuEEN0l1f30/s320/product2.jpeg" alt="" class="product-img">
+                <!-- product name -->
+                <h2 class="product-title">BAGPACK</h2>
+                <span class="price">₹399</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+
+            <!-- product box3 -->
+            <div class="product-box">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhHQOyjRMKT93SWaKkDKQroBD_CihdogC5fgzKyhwGYWCIrQxDs4p0a6cGdzTHUvAdBjgLa5fiDfpwx8U1dhSwUC7Tzcp9UZUi8aNPDVkpL9Eo_RdsQ-6hC7Z_v4hwGZnnaA9HI5lCdrahm8RiWRLYudTjSJQIDI3I9vpYSmdHMrIBaDMkmhDWqHAsNiBQ5/s320/product3.jpeg" alt="" class="product-img">
+                <!-- product name -->
+                <h2 class="product-title">CAP</h2>
+                <span class="price">₹99</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+
+            <!-- product box4 -->
+            <div class="product-box">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEju8pt-UogoRv8JGQ3ujMjitebboYxMywbhfqd1e9GH_9-XlAINZoZTS94zBVv3unTHUJQ6FFKRVbnUk1m9OPbW05M4mNCn0iy5JFu1ei4uElnastY4Oi6h1mPyIYJfObA26jzwb5AsC9J4JMGNpXa54uqjz9qTx5gWY3Y84m0qGDGrBheFXlC-VZOiFO5D/s320/product4.jpeg" alt="" class="product-img">
+                <!-- product name -->
+                <h2 class="product-title">T-SHIRT</h2>
+                <span class="price">₹899</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+
+            <!-- product box5 -->
+            <div class="product-box">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiVwHTk7uAXY5ERkHpHZ-PmZPOubM4MmSIUv3vUCJ7QQe0bvKdrkTlCG6uk_PvE9S9VS014YZ_iensn-iWLPFv49pUAd_WFpdVZWBxVJ3z8TV4Ql0cAdwhZiHHwfLCWf6UaXOOeZSk54iSRxQXtN-Urx4Nnlh4pfU5rgjjIW-yeDnhQqayKAuwvAKg9x7CS/s320/product5.jpeg" alt="" class="product-img">
+                <!-- product name -->
+                <h2 class="product-title">SUIT</h2>
+                <span class="price">₹699</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+
+            <!-- product box6 -->
+            <div class="product-box">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiJsFTIA9m8Rd2hPQzhO79cANjNmWHx5VC3zOjgdejKHmddeuaKEJyry2m_gFFI3Tmd91W4nb97B0gxTfawKqEI0ll3qUFaDywpjvp3xENi76al6McPAqqTmf4rnhSInlvFMUN-bjc_ZTFDMk0M04xZSM3M9AmxSBGSe3Ms4O_g4WMvg3G_LMyZ0BUnmZzY/s320/product6.jpeg" alt="" class="product-img">
+                <!-- product name -->
+                <h2 class="product-title">EARBUDS</h2>
+                <span class="price">₹50</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+
+            <!-- product box7 -->
+            <div class="product-box">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiYIQ0upUIqLO9t7dxTwHF4fUwXPcCyhUog2ehFIssTBRRAifhpDEMe04nneFbL4ZMxidNmocIhkwnyNA_Nvceh4CSBgnwEzM6BV4NK_mAWtP2kB_mXALnS_MLd7ueMTffCfuk7kFUqdlh3rGR9D0klDDTe5HWtonsWQnjzaE61mL3tMMtCQehp8JcWmK7Z/s320/product7.jpeg" alt="" class="product-img">
+                <!-- product name -->
+                <h2 class="product-title">BOTTLE</h2>
+                <span class="price">₹299</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+
+            <!-- product box8 -->
+            <div class="product-box">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEizwBAz2XkCZzHyFtONtpqarmImFcVM5umFAiFk5S1VcR3NVlAYjUInwUzHe2UhNea4ECzwwSD67V2XNOqGmq8K7evCtleskViDqIdl6qnjsvguWmsQw3du0sPvpiloGnAXn5T_H4aTyH87nUMFB_Zz99Nc8H06sBEOaxQQdrOrKNgkYivveFiCS9oXKvvk/s320/product8.jpeg" alt="" class="product-img">
+                <!-- product name -->
+                <h2 class="product-title">SHOES</h2>
+                <span class="price">₹500</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+
+            <!-- product box1 -->
+            <div class="product-box">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjodrRRFlEk3sMU4yCGqQw3cIg288nv30xk_Q1hYYr6BNSaRb9yoiu8WssIJKC52XGkWv7ceJWPs1G-j9lW7akySrtz9HYw3bhaOWCQZ1nN7UeFiPtj65o8OqhhKmSQGjAZjXW-1iy38MAYbsw_P4nn1ph6wJ1JHgmu91TV1r-iCM4_UYJgNIUCLuH81DmS/s320/product1.jpeg" alt="" class="product-img">
+                <!-- product name -->
+                <h2 class="product-title">ADICOLOR SEASONAL</h2>
+                <span class="price">₹499</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+
+            <!-- product box2 -->
+            <div class="product-box">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjrbkAhmqyZka6oiHWLKSpw2zKP0w-6A5lGfniVx6-v5DxC5LlS-tzy4AvYwanCuyxS9LRcoCW_3cO2kRKZZTF_Fd_XvtHU_d-RGWc4bdIik5Sx65KocbesNB-mQk8Ubi1WDpFqPZIjiilVCtOo8oEttGoAEBLe9Jm4ZCW6CaAqg1tkKaq65EuEEN0l1f30/s320/product2.jpeg" alt="" class="product-img">
+                <!-- product name -->
+                <h2 class="product-title">BAGPACK</h2>
+                <span class="price">₹399</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+
+            <!-- product box3 -->
+            <div class="product-box">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhHQOyjRMKT93SWaKkDKQroBD_CihdogC5fgzKyhwGYWCIrQxDs4p0a6cGdzTHUvAdBjgLa5fiDfpwx8U1dhSwUC7Tzcp9UZUi8aNPDVkpL9Eo_RdsQ-6hC7Z_v4hwGZnnaA9HI5lCdrahm8RiWRLYudTjSJQIDI3I9vpYSmdHMrIBaDMkmhDWqHAsNiBQ5/s320/product3.jpeg" alt="" class="product-img">
+                <!-- product name -->
+                <h2 class="product-title">CAP</h2>
+                <span class="price">₹99</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+
+            <!-- product box4 -->
+            <div class="product-box">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEju8pt-UogoRv8JGQ3ujMjitebboYxMywbhfqd1e9GH_9-XlAINZoZTS94zBVv3unTHUJQ6FFKRVbnUk1m9OPbW05M4mNCn0iy5JFu1ei4uElnastY4Oi6h1mPyIYJfObA26jzwb5AsC9J4JMGNpXa54uqjz9qTx5gWY3Y84m0qGDGrBheFXlC-VZOiFO5D/s320/product4.jpeg" alt="" class="product-img">
+                <!-- product name -->
+                <h2 class="product-title">T-SHIRT</h2>
+                <span class="price">₹899</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+
+            <!-- product box5 -->
+            <div class="product-box">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiVwHTk7uAXY5ERkHpHZ-PmZPOubM4MmSIUv3vUCJ7QQe0bvKdrkTlCG6uk_PvE9S9VS014YZ_iensn-iWLPFv49pUAd_WFpdVZWBxVJ3z8TV4Ql0cAdwhZiHHwfLCWf6UaXOOeZSk54iSRxQXtN-Urx4Nnlh4pfU5rgjjIW-yeDnhQqayKAuwvAKg9x7CS/s320/product5.jpeg" alt="" class="product-img">
+                <!-- product name -->
+                <h2 class="product-title">SUIT</h2>
+                <span class="price">₹699</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+
+            <!-- product box6 -->
+            <div class="product-box">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiJsFTIA9m8Rd2hPQzhO79cANjNmWHx5VC3zOjgdejKHmddeuaKEJyry2m_gFFI3Tmd91W4nb97B0gxTfawKqEI0ll3qUFaDywpjvp3xENi76al6McPAqqTmf4rnhSInlvFMUN-bjc_ZTFDMk0M04xZSM3M9AmxSBGSe3Ms4O_g4WMvg3G_LMyZ0BUnmZzY/s320/product6.jpeg" alt="" class="product-img">
+                <!-- product name -->
+                <h2 class="product-title">EARBUDS</h2>
+                <span class="price">₹50</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+
+            <!-- product box7 -->
+            <div class="product-box">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiYIQ0upUIqLO9t7dxTwHF4fUwXPcCyhUog2ehFIssTBRRAifhpDEMe04nneFbL4ZMxidNmocIhkwnyNA_Nvceh4CSBgnwEzM6BV4NK_mAWtP2kB_mXALnS_MLd7ueMTffCfuk7kFUqdlh3rGR9D0klDDTe5HWtonsWQnjzaE61mL3tMMtCQehp8JcWmK7Z/s320/product7.jpeg" alt="" class="product-img">
+                <!-- product name -->
+                <h2 class="product-title">BOTTLE</h2>
+                <span class="price">₹299</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+
+            <!-- product box8 -->
+            <div class="product-box">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEizwBAz2XkCZzHyFtONtpqarmImFcVM5umFAiFk5S1VcR3NVlAYjUInwUzHe2UhNea4ECzwwSD67V2XNOqGmq8K7evCtleskViDqIdl6qnjsvguWmsQw3du0sPvpiloGnAXn5T_H4aTyH87nUMFB_Zz99Nc8H06sBEOaxQQdrOrKNgkYivveFiCS9oXKvvk/s320/product8.jpeg" alt="" class="product-img">
+                <!-- product name -->
+                <h2 class="product-title">SHOES</h2>
+                <span class="price">₹500</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+        </div>
+    </section>
+
+    <!-- Review -->
+    <section id="review" class="review container">
+        <h2 class="section-title">Customer Reviews</h2>
+        <div class="review-content">
+            <!-- Review Items -->
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="contact container">
+        <h2 class="section-title">Contact Us</h2>
+        <!-- Contact Form -->
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Ecommerce. All Rights Reserved</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
