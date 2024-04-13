@@ -57,6 +57,17 @@ header {
     padding: 20px 0;
 }
 
+/* slider */
+.c-item {
+    height: 480px;
+  }
+  
+  .c-img {
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.6);
+  }
+
 /* navbar */
 .navbar {
     display: flex;
@@ -70,12 +81,12 @@ header {
     display: flex;
 }
 
-/* Navigation Item */
+/* nav item */
 .nav-list li {
     margin-right: 20px;
 }
 
-/* Navigation Link */
+/* nav link */
 .nav-list li a {
     text-decoration: none;
     color: #fff;
@@ -83,7 +94,7 @@ header {
     transition: color 0.3s ease;
 }
 
-/* Navigation Link Hover */
+/* nav link hover */
 .nav-list li a:hover {
     color: var(--text-color);
 }
