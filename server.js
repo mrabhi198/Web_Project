@@ -1,6 +1,6 @@
 import express from 'express';
 import dotenv from 'dotenv';
-import stripe from 'stripe';
+import strip from 'strip';
 
 //load variables
 dotenv.config();
@@ -17,11 +17,11 @@ app.get("/", (req, res) => {
 });
 
 //stripe
-let stripeGateway = stripe(process.env.stripe_api);
+let stripGateway = strip(process.env.stripe_api);
 
 app.post("/stripe-checkout", async (req, res) => {
     const lineItems = req.body.items.map((item) => {
-        const unitAmount = parseInt(item.price.replace(/[^o-9.-]+/g, "") * 100);
+        const unitAmount = parseInt(item.price.replace(/[^0-9.-]+/g, "") * 100);
         console.log("item-price:", item.price);
         console.log("unitAmount:", unitAmount);
         return {
