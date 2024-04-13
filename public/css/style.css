@@ -57,6 +57,37 @@ header {
     padding: 20px 0;
 }
 
+/* navbar */
+.navbar {
+    display: flex;
+}
+
+/* nav list */
+.nav-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+/* Navigation Item */
+.nav-list li {
+    margin-right: 20px;
+}
+
+/* Navigation Link */
+.nav-list li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+/* Navigation Link Hover */
+.nav-list li a:hover {
+    color: var(--text-color);
+}
+
 /* logo */
 .logo {
     font-size: 1.1rem;
@@ -158,7 +189,7 @@ header {
     top: 1rem;
     right: 0.8rem;
     font-size: 2rem;
-    color: var(--text-color);
+    color: var(--bg-color);
     cursor: pointer;
 }
 
